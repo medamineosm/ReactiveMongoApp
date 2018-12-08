@@ -11,5 +11,5 @@ import reactor.core.publisher.Flux;
 @Repository
 public interface PersonRepository extends ReactiveMongoRepository<Person, String>{
 
-    Flux<Person> GetPersonByFirstName(String firstName);
+    Flux<Person> getPersonByFirstName(String firstName);
 }

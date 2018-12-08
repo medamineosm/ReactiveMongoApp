@@ -18,6 +18,6 @@ public class Person {
     @Id
     private String id;
     private String firstName;
-    private String listName;
+    private String lastName;
     private int age;
 }
