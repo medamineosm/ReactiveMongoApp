@@ -40,4 +40,9 @@ public class ReactivePersonRepositoryIntegrationTest {
     public void getPersonByFirstNameTest() {
         Flux<Person> persons = personDao.getPersonByFirstName("ouasmine");
     }
+
+    @Test
+    public void saveTest(){
+        personDao.saveOne(new Person("kira", "ouasmine","hassan", 24));
+    }
 }
